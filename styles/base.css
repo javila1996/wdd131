@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #2B4162;  /* Dark Blue */
+    --secondary-color: #385F71; /* Teal Green */
+    --accent-color-1: #F5F0F6; /* Soft White */
+    --accent-color-2: #D7B377; /* Warm Gold */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+}
+
+h1 {
+    color: var(--secondary-color);
+    background-color: var(--accent-color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+nav {
+	background-color: var(--secondary-color);
+	margin: 0 auto;
+	max-width: 800px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: overline;
+}
+
+.active {
+	color: yellow;
+}
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card1, .card2 {
+    background-color: #F5F0F6;
+    padding: 20px;
+    border: 1px solid #D7B377;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 45%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+.card1 .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card1 .content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.card1 .content p {
+    flex: 1;
+}
+
+.card1 .reverse {
+    flex-direction: row-reverse;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7B377;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7B377;
+}
