@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place: Dublin, Ireland</title>
-    <meta name="description" content="country page">
+    <meta name="description" content="favorite place i have visited is Dublin, Ireland">
     <meta name="author" content="Josue Avila">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <header>
         <h1>Dublin, Ireland</h1>
+    </header>
+    <main>
         <section class="hero">
             <picture>
                 <source srcset="images/pexels-lkloeppel-2416653.webp" media="(min-width: 1000px)">
@@ -35,6 +37,11 @@
         </section>
         <section class="weather">
             <h2>Current Weather⛅️</h2>
+            <div class="weather-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <path d="M12 4a6 6 0 1 0 6 6 6 6 0 0 0-6-6zM12 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4zM18 20a4 4 0 0 0-8 0h8zM4 20a4 4 0 0 0 8 0H4z" fill="#FF9900"/>
+                </svg>
+            </div>
             <p>Temperature: <span id="temperature">15</span>&deg;C</p>
             <p>Wind Speed: <span id="windSpeed">10</span> km/h</p>
             <p>Wind Chill: <span id="windChill"></span></p>
