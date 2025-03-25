@@ -20,6 +20,7 @@ h1 {
     border: #009A44;
     padding: 3rem;
 }
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -34,32 +35,26 @@ h1 {
 }
 
 /* Data and Weather Sections */
-.data {
+.data, .weather {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
     width: 300px;
     position: absolute;
-    top: 20%;
-}
-
-.weather {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
 }
 
 .data {
     left: 5%;
+    top: 20%;
 }
 
-/* Section Headings */
+.weather {
+    right: 5%;
+    bottom: 20px;
+}
+
 .data h2, .weather h2 {
     background-color: #009A44;
     color: white;
@@ -74,22 +69,35 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Mobile Specific Layout (For screens <= 767px) */
 @media (max-width: 767px) {
+    /* Hero Section */
     .hero picture img {
         width: 100%;
         height: auto;
     }
 
+    /* Stack the sections into a single list */
+    .data, .weather {
+        width: 90%;  /* Make sections wider for mobile */
+        margin: 10px auto;
+        position: relative;  /* Remove absolute positioning */
+        padding: 10px;
+    }
+
+    /* Simplify Data & Weather as a list */
     .data ul {
         padding-left: 20px;
     }
 
-    .data li {
-        font-size: 0.9rem;
+    .data li, .weather li {
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 
-    .weather p {
-        font-size: 1rem;
+    /* Add space between the data and weather sections */
+    .weather {
+        margin-top: 20px;
     }
 
     footer {
@@ -108,7 +116,12 @@ footer {
         height: auto;
     }
 
-    .data li {
+    .data, .weather {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .data li, .weather li {
         font-size: 1rem;
     }
 
