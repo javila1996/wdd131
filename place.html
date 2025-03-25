@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place: Dublin, Ireland</title>
+    <meta name="description" content="country page">
+    <meta name="author" content="Josue Avila">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js"defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Dublin, Ireland</h1>
+        <section class="hero">
+            <picture>
+                <source srcset="images/pexels-lkloeppel-2416653.webp" media="(min-width: 1000px)">
+                <source srcset="images/temple_bar.webp" media="(min-width: 768px)">
+                <img src="images/temple_bar_2.jpeg" alt="Dublin Cityscape">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area:117.8 km²</li>
+                <li>Populations: 592,713</li>
+                <li>Languages: English, Irish </li>
+                <li>Currency: Euro</li>
+                <li>Time Zone: IST, UTC+1</li>
+                <li>Calling Code: +353</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Current Weather⛅️</h2>
+            <p>Temperature: <span id="temperature">15</span>&deg;C</p>
+            <p>Wind Speed: <span id="windSpeed">10</span> km/h</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Josue Avila, Saratoga Springs, Utah</p>
+        <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
