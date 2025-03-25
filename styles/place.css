@@ -77,55 +77,25 @@ footer {
         height: auto;
     }
 
-    /* Stack the sections into a single list */
     .data, .weather {
-        width: 90%;  /* Make sections wider for mobile */
+        width: 90%;
         margin: 10px auto;
-        position: relative;  /* Remove absolute positioning */
+        position: relative;
         padding: 10px;
+        border: none;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 0;
     }
 
-    /* Simplify Data & Weather as a list */
-    .data ul {
-        padding-left: 20px;
+
+    .data ul, .weather p {
+        text-align: center;
     }
 
     .data li, .weather li {
         font-size: 1rem;
         margin-bottom: 10px;
-    }
-
-    /* Add space between the data and weather sections */
-    .weather {
-        margin-top: 20px;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
-
-    main {
-        padding: 10px;
-    }
-}
-
-/* Larger Tablet/Landscape Mobile */
-@media (max-width: 1024px) {
-    .hero picture img {
-        width: 100%;
-        height: auto;
-    }
-
-    .data, .weather {
-        width: 80%;
-        margin: 10px auto;
-    }
-
-    .data li, .weather li {
-        font-size: 1rem;
-    }
-
-    .weather p {
-        font-size: 1.1rem;
+        text-align: center; 
     }
 }
