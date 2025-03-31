@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    figure {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    figure {
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
