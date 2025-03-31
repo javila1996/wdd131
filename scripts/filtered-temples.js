@@ -87,6 +87,10 @@
 
   const templeContainer = document.getElementById('temple-card-container');
 
+  function displayTemples(filteredTemples) {
+    // Clear the existing content in the container
+    templeContainer.innerHTML = "";
+
   // Loop through the temples array and create a card for each temple
   temples.forEach(temple => {
     const templeCard = document.createElement('div');
@@ -105,41 +109,40 @@
     // Append the card to the container
     templeContainer.appendChild(templeCard);
   });
-  
-    // Display all temples initially
-    displayTemples(temples);
+}
+displayTemples(temples);
 
-    // Filter by Old (temples dedicated before 1900)
-    document.getElementById('old').addEventListener('click', () => {
-      const oldTemples = temples.filter(temple => {
-        const year = parseInt(temple.dedicated.split(',')[0]);
-        return year < 1900;
-      });
-      displayTemples(oldTemples);
-    });
-  
-    // Filter by New (temples dedicated after 2000)
-    document.getElementById('new').addEventListener('click', () => {
-      const newTemples = temples.filter(temple => {
-        const year = parseInt(temple.dedicated.split(',')[0]);
-        return year > 2000;
-      });
-      displayTemples(newTemples);
-    });
-  
-    // Filter by Large (temples with area > 90,000 sq ft)
-    document.getElementById('large').addEventListener('click', () => {
-      const largeTemples = temples.filter(temple => temple.area > 90000);
-      displayTemples(largeTemples);
-    });
-  
-    // Filter by Small (temples with area < 10,000 sq ft)
-    document.getElementById('small').addEventListener('click', () => {
-      const smallTemples = temples.filter(temple => temple.area < 10000);
-      displayTemples(smallTemples);
-    });
-  
-    // Show all temples (Home button)
-    document.getElementById('home').addEventListener('click', () => {
-      displayTemples(temples); // Show all temples
-    });
+// Filter by Old (temples dedicated before 1900)
+document.getElementById("old").addEventListener("click", () => {
+  const oldTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated.split(",")[0]);
+    return year < 1900;
+  });
+  displayTemples(oldTemples);
+});
+
+// Filter by New (temples dedicated after 2000)
+document.getElementById("new").addEventListener("click", () => {
+  const newTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated.split(",")[0]);
+    return year > 2000;
+  });
+  displayTemples(newTemples);
+});
+
+// Filter by Large (temples with area > 90,000 sq ft)
+document.getElementById("large").addEventListener("click", () => {
+  const largeTemples = temples.filter((temple) => temple.area > 90000);
+  displayTemples(largeTemples);
+});
+
+// Filter by Small (temples with area < 10,000 sq ft)
+document.getElementById("small").addEventListener("click", () => {
+  const smallTemples = temples.filter((temple) => temple.area < 10000);
+  displayTemples(smallTemples);
+});
+
+// Show all temples (Home button)
+document.getElementById("home").addEventListener("click", () => {
+  displayTemples(temples); // Show all temples
+});
