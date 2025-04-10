@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
+
+:root {
+  --primary-color: #2B4162;     /* Headings, main brand */
+  --secondary-color: #385F71;   /* Section headings, background */
+  --accent1-color: #F5F0F6;     /* Light backgrounds, highlights */
+  --accent2-color: #D7B377;     /* Buttons, emphasis text */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--accent1-color);
+  margin: 0;
+  padding: 2rem;
+  color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--accent1-color);
+  border-left: 5px solid var(--accent2-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.accent {
+  color: var(--accent2-color);
+  font-weight: bold;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.light-bg {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  padding: 2px 6px;
+}
+
+img.wireframe {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem 0;
+  border: 2px dashed var(--secondary-color);
+  padding: 1rem;
+  background-color: white;
+}
