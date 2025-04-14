@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Next Level FC - Official Site</title>
+  <link rel="stylesheet" href="styles/siteplan.css" />
+</head>
+<body>
+  <header>
+    <h1>Next Level FC</h1>
+    <nav>
+      <ul>
+        <li><a href="final-project.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="coaches.html">Coaches</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="faq.html">FAQ's</a></li>
+      </ul>
+    </nav>        
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/champion-team.webp" alt="Current Season Champions" class="hero-img">
+      <div class="hero-text">
+        <h2>2025 Season Champions</h2>
+        <p>Congratulations to our U19 team for taking home the trophy this season! 🏆</p>
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+      <a href="resources.html" class="quick-link">Parent Resources</a>
+      <a href="newsletter.html" class="quick-link">Newsletter</a>
+      <a href="tryouts.html" class="quick-link">Upcoming Tryouts</a>
+    </section>
+
+    <!-- Age Groups Section -->
+    <section class="age-groups">
+      <h2>Age Groups</h2>
+      <ul>
+        <li>U9</li>
+        <li>U10</li>
+        <li>U12</li>
+        <li>U13</li>
+        <li>U14</li>
+        <li>U15</li>
+        <li>U16</li>
+        <li>U19</li>
+      </ul>
+    </section>
+
+    <!-- Tryout Form Section -->
+    <section class="tryout-form">
+      <h2>Request a Tryout</h2>
+      <form id="tryoutForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="ageGroup">Age Group:</label>
+        <select id="ageGroup" required>
+          <option value="">Select Age Group</option>
+          <option value="U9">U9</option>
+          <option value="U10">U10</option>
+          <option value="U12">U12</option>
+          <option value="U14">U14</option>
+          <option value="U16">U16</option>
+          <option value="U19">U19</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Next Level FC. Josue Avila.</p>
+  </footer>
+
+  <script src="scripts/siteplan.js"></script>
+</body>
+</html>
