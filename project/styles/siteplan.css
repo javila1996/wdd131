@@ -371,3 +371,86 @@ footer {
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial-box {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #2b4162;
+  transition: all 0.4s ease;
+}
+
+.age-groups ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.age-groups li {
+  background: #d7b377;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.form-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Coaches grid */
+.coach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.coach-card {
+  background: #f5f0f6;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.coach-card img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Facilities images */
+.facilities-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.facilities-gallery figure {
+  text-align: center;
+}
+
+.facilities-gallery img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.facilities-description {
+  text-align: center;
+  padding: 2rem;
+}

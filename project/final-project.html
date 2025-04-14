@@ -23,7 +23,7 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <img src="images/champion-team.webp" alt="Current Season Champions" class="hero-img">
+      <img src="images/champions.jpg" alt="Current Season Champions" class="hero-img" loading="lazy">
       <div class="hero-text">
         <h2>2025 Season Champions</h2>
         <p>Congratulations to our U19 team for taking home the trophy this season! 🏆</p>
@@ -37,19 +37,10 @@
       <a href="tryouts.html" class="quick-link">Upcoming Tryouts</a>
     </section>
 
-    <!-- Age Groups Section -->
+    <!-- Age Groups Section (Rendered by JS) -->
     <section class="age-groups">
       <h2>Age Groups</h2>
-      <ul>
-        <li>U9</li>
-        <li>U10</li>
-        <li>U12</li>
-        <li>U13</li>
-        <li>U14</li>
-        <li>U15</li>
-        <li>U16</li>
-        <li>U19</li>
-      </ul>
+      <ul id="ageGroupList"></ul>
     </section>
 
     <!-- Tryout Form Section -->
@@ -63,7 +54,7 @@
         <input type="email" id="email" required>
 
         <label for="ageGroup">Age Group:</label>
-        <select id="ageGroup" required>
+        <select id="ageGroupSelect" required>
           <option value="">Select Age Group</option>
           <option value="U9">U9</option>
           <option value="U10">U10</option>
@@ -77,10 +68,16 @@
         <p id="formMessage" class="form-message"></p>
       </form>
     </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Parents Are Saying</h2>
+      <div id="testimonialBox" class="testimonial-box"></div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Next Level FC. Josue Avila.</p>
+    <p>&copy; <span id="year"></span> Next Level FC. All rights reserved.</p>
   </footer>
 
   <script src="scripts/siteplan.js"></script>
